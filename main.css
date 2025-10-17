@@ -1,0 +1,250 @@
+/* Estilos para Altar Digital - Ofrenda a Pioneros de la Tecnología */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Efecto de velas flotantes en el fondo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 20% 30%, rgba(255, 183, 77, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 152, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 193, 7, 0.05) 0%, transparent 50%);
+  animation: candleGlow 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes candleGlow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, rgba(255, 152, 0, 0.2) 0%, rgba(255, 183, 77, 0.1) 100%);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 40px rgba(255, 152, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgba(255, 183, 77, 0.3);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #ffb74d;
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.8), 0 0 40px rgba(255, 183, 77, 0.5);
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 20px rgba(255, 152, 0, 0.8), 0 0 40px rgba(255, 183, 77, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 152, 0, 1), 0 0 60px rgba(255, 183, 77, 0.8);
+  }
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #ffd54f;
+  font-style: italic;
+  font-weight: normal;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+article {
+  background: linear-gradient(145deg, rgba(30, 30, 60, 0.9) 0%, rgba(20, 20, 40, 0.95) 100%);
+  border: 3px solid rgba(255, 183, 77, 0.4);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Efecto de luz de vela en cada tarjeta */
+article::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 183, 77, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+article:hover::before {
+  opacity: 1;
+  animation: candleFlicker 2s ease-in-out infinite;
+}
+
+@keyframes candleFlicker {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(5px, -5px) scale(1.05);
+  }
+  50% {
+    transform: translate(-5px, 5px) scale(0.95);
+  }
+  75% {
+    transform: translate(5px, 5px) scale(1.02);
+  }
+}
+
+article:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(255, 183, 77, 0.8);
+  box-shadow: 0 15px 50px rgba(255, 152, 0, 0.4), 0 0 30px rgba(255, 183, 77, 0.3);
+}
+
+article h3 {
+  font-size: 2rem;
+  color: #ffb74d;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+article p:first-of-type {
+  font-size: 1.1rem;
+  color: #ffd54f;
+  font-style: italic;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+article p:last-of-type {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  background: linear-gradient(180deg, rgba(255, 183, 77, 0.1) 0%, rgba(255, 152, 0, 0.2) 100%);
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgba(255, 183, 77, 0.2);
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #ffb74d;
+  font-style: italic;
+  text-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  article h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animación de entrada para las tarjetas */
+article {
+  animation: fadeInUp 0.8s ease-out backwards;
+}
+
+article:nth-child(1) {
+  animation-delay: 0.1s;
+}
+article:nth-child(2) {
+  animation-delay: 0.2s;
+}
+article:nth-child(3) {
+  animation-delay: 0.3s;
+}
+article:nth-child(4) {
+  animation-delay: 0.4s;
+}
+article:nth-child(5) {
+  animation-delay: 0.5s;
+}
+article:nth-child(6) {
+  animation-delay: 0.6s;
+}
+article:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

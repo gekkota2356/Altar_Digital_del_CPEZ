@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofrenda Digital - Leyendas de la Tecnología</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Estilos base para el altar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #0a0a0a 0%, #1a0a2e 100%);
+            color: #ff9800;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 5;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 152, 0, 0.8);
+        }
+        
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 5;
+        }
+        
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        article {
+            background: rgba(26, 10, 46, 0.8);
+            border: 2px solid #ff9800;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 30px rgba(255, 152, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(255, 152, 0, 0.5);
+        }
+        
+        article h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffeb3b;
+        }
+        
+        article p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 5;
+            font-style: italic;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header h2 {
+                font-size: 1.2rem;
+            }
+            
+            section {
+                grid-template-columns: 1fr;
+            }
+            
+            #altar-controls {
+                top: 10px;
+                right: 10px;
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ofrenda Digital</h1>
+        <h2>En Memoria de los Pioneros de la Tecnología</h2>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h3>Steve Jobs</h3>
+                <p>1955 - 2011</p>
+                <p>Co-fundador de Apple Inc. Revolucionó la informática personal, los teléfonos inteligentes y la industria del entretenimiento digital.</p>
+            </article>
+
+            <article>
+                <h3>Alan Turing</h3>
+                <p>1912 - 1954</p>
+                <p>Matemático y padre de la computación moderna. Creador de la Máquina de Turing y pionero en inteligencia artificial.</p>
+            </article>
+
+            <article>
+                <h3>Grace Hopper</h3>
+                <p>1906 - 1992</p>
+                <p>Pionera en programación de computadoras. Desarrolló el primer compilador y contribuyó al lenguaje COBOL.</p>
+            </article>
+
+            <article>
+                <h3>Dennis Ritchie</h3>
+                <p>1941 - 2011</p>
+                <p>Creador del lenguaje de programación C y co-creador del sistema operativo UNIX.</p>
+            </article>
+
+            <article>
+                <h3>Ada Lovelace</h3>
+                <p>1815 - 1852</p>
+                <p>Considerada la primera programadora de la historia. Escribió el primer algoritmo destinado a ser procesado por una máquina.</p>
+            </article>
+
+            <article>
+                <h3>John von Neumann</h3>
+                <p>1903 - 1957</p>
+                <p>Matemático y físico que desarrolló la arquitectura de computadoras que lleva su nombre, base de las computadoras modernas.</p>
+            </article>
+
+            <article>
+                <h3>Katherine Johnson</h3>
+                <p>1918 - 2020</p>
+                <p>Matemática de la NASA cuyas cálculos fueron cruciales para el éxito del programa espacial estadounidense.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recordando a quienes construyeron el mundo digital que hoy habitamos</p>
+    </footer>
+
+    <!-- Cargar el JavaScript del altar -->
+    <script src="hola.js"></script>
+</body>
+</html>
