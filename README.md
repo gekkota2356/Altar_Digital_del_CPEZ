@@ -414,4 +414,4 @@ Para dudas o problemas:
 
 **Versión**: 1.0.0  
 **Última actualización**: 2025  
-**Licencia**: MIT
+
