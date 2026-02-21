@@ -56,7 +56,7 @@ Proyecto de **Ofrenda Digital** interactiva que rinde homenaje a los pioneros de
 
 ---
 
-## 🎨 altar-digital.css
+##  altar-digital.css
 
 ### Organización del CSS
 
@@ -125,7 +125,7 @@ Proyecto de **Ofrenda Digital** interactiva que rinde homenaje a los pioneros de
 
 ---
 
-## ⚙️ altar-digital.js
+##  altar-digital.js
 
 ### Arquitectura del JavaScript
 
@@ -255,7 +255,7 @@ Animaciones sincronizadas con refresh del navegador
 
 ---
 
-## 🚀 Uso e Integración
+##  Uso e Integración
 
 ### Instalación Básica
 
@@ -313,7 +313,7 @@ const CONFIG = {
 
 ---
 
-## 📊 Características Técnicas
+##  Características Técnicas
 
 ### Tecnologías Utilizadas
 - HTML5 (Canvas API, Semantic HTML)
@@ -340,36 +340,36 @@ const CONFIG = {
 
 ---
 
-## 🎯 Funcionalidades Implementadas
+##  Funcionalidades Implementadas
 
 ### Core
-- ✅ Velas interactivas con llama animada
-- ✅ Pétalos de cempasúchil con física
-- ✅ Efecto parallax multicapa
-- ✅ Luz ambiental dinámica
-- ✅ Transiciones suaves entre secciones
-- ✅ Responsive design
+-  Velas interactivas con llama animada
+-  Pétalos de cempasúchil con física
+-  Efecto parallax multicapa
+-  Luz ambiental dinámica
+-  Transiciones suaves entre secciones
+-  Responsive design
 
 ### Interactividad
-- ✅ Click en velas para encender/apagar
-- ✅ Sonido opcional al interactuar
-- ✅ Hover effects en tarjetas
-- ✅ Scroll reveal animations
+-  Click en velas para encender/apagar
+-  Sonido opcional al interactuar
+-  Hover effects en tarjetas
+-  Scroll reveal animations
 
 ### Accesibilidad
-- ✅ Pausar animaciones
-- ✅ Control de intensidad
-- ✅ Modo día/noche
-- ✅ Preferencias guardadas
+-  Pausar animaciones
+-  Control de intensidad
+-  Modo día/noche
+-  Preferencias guardadas
 
 ### Extras Opcionales
-- ⚠️ Audio-reactividad (parcial)
-- ✅ Captura de pantalla
-- ✅ Modo día/noche completo
+- Audio-reactividad (parcial)
+- Captura de pantalla
+- Modo día/noche completo
 
 ---
 
-## 🐛 Solución de Problemas
+##  Solución de Problemas
 
 ### Las animaciones van lentas
 \`\`\`javascript
@@ -390,7 +390,7 @@ CONFIG.rendimiento.particulas = 'bajo'
 
 ---
 
-## 📝 Notas de Desarrollo
+##  Notas de Desarrollo
 
 ### Próximas Mejoras
 - [ ] Agregar más efectos de partículas
@@ -403,7 +403,7 @@ Proyecto creado para honrar a los pioneros de la tecnología que construyeron el
 
 ---
 
-## 📞 Soporte
+##  Soporte
 
 Para dudas o problemas:
 1. Revisar la consola del navegador
